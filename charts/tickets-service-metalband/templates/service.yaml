@@ -7,6 +7,10 @@ metadata:
   name: {{ template "fullname" . }}
 {{- end }}
   labels:
+    spring-boot: "true"
+    s1p: "true"
+    tickets: "true"
+    code: "metalband"
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
 {{- if .Values.service.annotations }}
   annotations:
